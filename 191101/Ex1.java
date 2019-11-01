@@ -1,8 +1,11 @@
-1- משתנה i אשר מתייחס למספר התלמידים והוא מספר שלם//
-2- משתנה j המתייחס למספר הנוסחאות והוא מספר שלם//
-3- משתנה k המתייחס למספר השולחנות והוא מספר שלם//
-4- ("מספר התלמידים")
-5- (" מספר הכיסאות")
-6-("מספר התלמידים קטן שווה למספרי הכיסאות")
-7- ("מספר התלמידים גדול ממספר הכיסאות וגם חצי ממספר התלמידים שווה למספר השולחנות")
-8- ("מספר התלמידים קטן ממספר הכיסאות והשולחנות")
+
+
+
+1-//Variable i which refers to the number of students and is an integer
+2-//Variable j refers to the number of chairs and is an integer
+3-//Variable k that refers to the number of tables and is an integer
+4-("Students number")
+5-("chairs number")
+6-("The number of students is equal small to the number of chairs")
+7-("The number of students is greater than the number of chairs and half the number of students is equal to the number of tables")
+8-("the number of students is smaller than the number of the tables and chairs")
