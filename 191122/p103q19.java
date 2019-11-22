@@ -1,0 +1,19 @@
+import java.util.*;
+public class MyClass
+{
+	public static Scanner reader=new Scanner (System.in);
+	public static void main (String[] args)
+	{
+		System.out.println( "enter two numbers of your choise");
+		int num1=reader.nextInt();
+		int num2=reader.nextInt();
+		if ((num1>0) && (num1<10)) && ((num2>9) && (num2<100))
+		{
+			Systen.out.println ("yes");
+		}
+		else
+		{
+			System.out.println ("no");
+		}
+	}
+}
