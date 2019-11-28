@@ -1,0 +1,21 @@
+import jeliot.io.*;
+import java.util.Scanner*;
+public class permit
+{
+	public static Scanner reader = new Scanner (System.in);
+	public static void main (String[] args)
+	{
+		double r, pi, p, s;
+		pi = Math.PI;
+		
+		System.out.print("Enter your Circle's radius: ");
+		r = reader.nextDouble();
+		
+		p = 2 * pi * r;
+		s = pi * Math.pow (r,2);
+		
+		System.out.println ("Your circle's sphere = " + s);
+		System.out.println ("your circle's P = " + p);
+		
+    }
+}

@@ -1,0 +1,22 @@
+import jeliot.io.*;
+import java.util.*;
+
+public class Yeter {
+    public static void main() {
+        
+        double nizab1;
+        double nizab2;
+        double yeter;
+        
+        Scanner reader = new Scanner(System.in);
+        System.out.println("how long is the first nizab?");
+        nizab1 = reader.nextDouble();
+        
+        Scanner reader2 = new Scanner(System.in);
+        System.out.println("how long is the Second nizab?");
+        nizab2 = reader2.nextDouble();
+        
+        yeter = nizab1 * nizab1 + nizab2 * nizab2;
+        System.out.println("the yeter is " + yeter + "m long");
+    }
+}

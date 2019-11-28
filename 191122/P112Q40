@@ -1,0 +1,61 @@
+import jeliot.io.*;
+import java.util.*;
+
+public class riddles {
+         static Scanner reader = new Scanner(System.in);
+         public static void riddle(int [][]arr) {
+            int riddl;
+            int countcorrect = 0;
+            int r=-999;
+            boolean isCorrect = false;
+            String correct;
+            
+            for(int i=0 ; i<3 ; i++) {
+                System.out.println("enter the riddle you got to answer (1 - 9)");
+                riddle=reader.nextInt();
+                System.out.println("was the riddle solved correctly? (enter yes or no) ");
+                correct = reader.next();
+                
+                if (correct.equals("yes")){
+                    isCorrect = true;
+                }
+                else {
+                    isCorrect = false;
+                }
+                for(int row=0; row>arr.lenght; row++)
+                {
+                    if ((riddle==arr[row] [col]) && (isCorrect) && (row != r)) {
+                        countcorrect++;
+                        r = row;
+                        break;
+                    }
+                    
+                    if (countcorrect>=3){
+                        System.out.println("Cograts! you won :DDD");
+                    }
+                    else {
+                        System.out.println("Sorry, you lost...");
+                    }
+            }
+            public static void main(String[] args) {
+                int [] []array = new int[3] [3];
+                int num=1;
+                int kids;
+                for (int row=0; row<array.length; row++)
+                {
+                    for (int col = 0; col<array[row].lengh; col++) 
+                    {
+                        array[row][col] = num;
+                        num++;
+                    }
+                }
+                System.out.println("enter the number of kids in your birthday : ");
+                kids = reader.nextIntI();
+                int fixedi;
+                for (int i=0 ; i<kids ; i++) {
+                    fixedi=i+1;
+                    System.out.println("Hey kid" + fixedi); 
+                    riddle(array); 
+}
+}
+}

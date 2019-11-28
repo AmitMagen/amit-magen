@@ -1,0 +1,36 @@
+import jeliot.io.*;
+import java.util.*;
+
+public class computerclass {
+	public static Scanner reader = new  Scanner (System.in);
+	public static void main (String[] args)
+		{
+			int psychometricgrade , bagrutgrade ;
+			System.out.println("enter your psychometric grade");
+			psychometrigrade = reader.nextInt();
+			System.out.print("enter your bagrut grade");
+			bagrutgrade=reader.nextInt();
+			if (((psychometricgrade <= 800) && (psychometricgrade>200)) && ((bagrutgrade<=120) && (bagrutgrade>0)))
+			{
+				if ((psychometricgrade>=690) && (bagrutgrade>=95))
+				{
+					System.out.println("you can be in computer science");
+				}
+				else if ((psychometricgrade<690) && (bagrutgrade>=95))
+				{
+					System.out.println("you need to retake the psychometric test");
+				}
+				else if ((psychometricgrade>=690) && (bagrutgrade<95))
+				{
+					System.out.println("you need to improve your bagrut");
+				}
+				else if ((psychometricgrade<690) && (bagrutgrade<95))
+				{
+					System.out.println ("you are not fit for computer science");
+				}
+			}
+			else if ((psychometricgrade>800) || (bagrutgrade>120) || (psychometricgrade<200) || (bagrutgrade<0))
+			{
+				System.out.print ("you need to enter real grades");
+				}
+	}
